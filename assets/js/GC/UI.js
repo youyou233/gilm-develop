@@ -24,6 +24,11 @@ cc.Class({
   },
   init(game) {
     this._game = game
+    // this.banner.init(this)
+    // this.footer.init(this)
+    // this.map.init(this)
+    // this.ship.init(this)
+    // this.star.init(this)
   },
   onLoad() {},
 

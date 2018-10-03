@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "c1da3413-0dc8-432e-bc51-aefd72ed2b6f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "点击前地图单图标": {
+      "ver": "1.0.3",
+      "uuid": "7bf9df2d-7e73-4b02-9859-85bd193c46d9",
+      "rawTextureUuid": "c1da3413-0dc8-432e-bc51-aefd72ed2b6f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2,
+      "offsetY": 0,
+      "trimX": 41,
+      "trimY": 0,
+      "width": 104,
+      "height": 87,
+      "rawWidth": 190,
+      "rawHeight": 87,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

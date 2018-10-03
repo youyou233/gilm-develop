@@ -20,6 +20,10 @@ cc.Class({
     _volume: 0,
     //难度
     _diffcult: 1,
+
+    // 其他控制器
+    preStartPageController: require('preStartPage'),
+    startPageController: require('startPage'),
   },
   // ------------------生命周期-----------------
   onLoad() {
@@ -29,6 +33,8 @@ cc.Class({
     // this.winheight = winSize.height
     // 游戏初始化
     this.game.init(this)
+    this.preStartPageController.init(this)
+    this.startPageController.init(this)
   },
   start() {
     // 打开加载界面
@@ -66,6 +72,7 @@ cc.Class({
   onStartPage() {
     this._status = 1
     this.closeAllPage()
+    this.startPageController.onShowPage()
     this.startPage.active = true
   },
   // -------------------游戏存档----------------- TODO:

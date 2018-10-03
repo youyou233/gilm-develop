@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "0ffed23f-7200-4c77-8b2e-0ec6e8fa703f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "点击前仓库单图标": {
+      "ver": "1.0.3",
+      "uuid": "f9ef30fe-0a10-4619-aa62-a0ed54929d8f",
+      "rawTextureUuid": "0ffed23f-7200-4c77-8b2e-0ec6e8fa703f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 3,
+      "offsetY": 1,
+      "trimX": 8,
+      "trimY": 0,
+      "width": 180,
+      "height": 85,
+      "rawWidth": 190,
+      "rawHeight": 87,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
