@@ -62,5 +62,6 @@ cc.Class({
   onGenerateMap(data) {
     this.mapController.onGenerateMap(data)
   },
+  // ------------页面控制-------------
   // update (dt) {},
 });

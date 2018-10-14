@@ -24,7 +24,9 @@ function getGuidData() {
     type: 0,
     option: [{
       content: '“有人吗？能听到我说话吗？”',
-      jump: 1,
+      // TODO:简化流程
+      end: 1,
+      //jump: 1,
     }],
   }, {
     content: '初始化设定完毕...\n辨识模组加载完毕...\n视觉模组加载完毕...',
