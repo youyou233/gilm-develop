@@ -1,6 +1,6 @@
 /**
  * @author uu
- * @file UI控制
+ * @file starUI控制
  */
 cc.Class({
   extends: cc.Component,

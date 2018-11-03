@@ -21,6 +21,7 @@ cc.Class({
     shipPage: cc.Node,
     starPage: cc.Node,
 
+    // UI节点控制
   },
   init(game) {
     this._game = game
@@ -63,5 +64,24 @@ cc.Class({
     this.mapController.onGenerateMap(data)
   },
   // ------------页面控制-------------
+  onPageOpen(num) {
+    this.closeAllPage()
+    switch (num) {
+      case 1:
+      this.shipPage.active=true
+        break;
+      case 2:
+      this.starPage.active=true
+        break;
+      case 3:
+      this.mapPage.active=true
+        break;
+    }
+  },
+  closeAllPage() {
+    this.mapPage.active = false
+    this.shipPage.active = false
+    this.starPage.active = false
+  }
   // update (dt) {},
 });

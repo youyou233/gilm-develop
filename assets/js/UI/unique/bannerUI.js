@@ -1,6 +1,6 @@
 /**
  * @author uu
- * @file UI控制
+ * @file bannerUI控制
  */
 cc.Class({
   extends: cc.Component,
