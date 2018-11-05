@@ -63,7 +63,7 @@ cc.Class({
         this.buttonsPool.put(buttons[0])
       }
   },
-  // TODO:打字机效果了解一下？
+  // 打字机效果了解一下？
   typingAni: function (label, text, cb, op) {
     var self = this;
     var html = '';

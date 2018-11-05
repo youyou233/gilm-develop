@@ -75,7 +75,7 @@ cc.Class({
     this.startPageController.onShowPage()
     this.startPage.active = true
   },
-  // -------------------游戏存档----------------- TODO:
+  // -------------------游戏存档----------------- TODO: 5
   // checkIsFristTime() {
   //     cc.log(cc.sys.localStorage.getItem('isFristTimePlay'))
   //     //判断是否第一次游戏 默认全部从教程开始
@@ -98,7 +98,7 @@ cc.Class({
   //onSaveGame() {
   //
   // },
-  //-------------------设置-------------------- TODO:
+  //-------------------设置-------------------- TODO: 5
   // onOpenSetting() {
   //     //调整声音和难度
   // },

@@ -24,7 +24,7 @@ function getGuidData() {
     type: 0,
     option: [{
       content: '“有人吗？能听到我说话吗？”',
-      // TODO:简化流程
+      // 简化流程
       end: 1,
       //jump: 1,
     }],

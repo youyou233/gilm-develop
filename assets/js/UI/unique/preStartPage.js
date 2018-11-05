@@ -24,7 +24,7 @@ cc.Class({
   },
   onShowSkipButton() {
     this.skipButton.active = true
-    // TODO:加一个闪烁的动画
+    // TODO: 4 加一个闪烁的动画
   },
   showNextPage() {
     this.closeAllPage()

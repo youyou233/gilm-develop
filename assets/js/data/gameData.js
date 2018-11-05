@@ -131,7 +131,7 @@ function initPlayData() {
   }
   return playData
 }
-// TODO:成就数据结构
+// TODO: 6 成就数据结构 
 function initAchievementData() {
   return [{
       content: "第一次游戏",

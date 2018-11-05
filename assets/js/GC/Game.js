@@ -70,7 +70,6 @@ cc.Class({
     this.chapterData = chapterData.getChapterData(this.chapter)
     this.mapData = mapData.onGenerateMap()
     this.gameData = gameData.initPlayData()
-    // TODO:refash map UI
   },
   onChapterEnd() {
     this.onOpenGameUIPage()

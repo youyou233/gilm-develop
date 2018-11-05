@@ -1,6 +1,7 @@
 /**
  * @author uu
  * @desc 地图数据 随机地图
+ * @todo 5 修改地图生成的位置
  */
 module.exports = {
     // 函数
@@ -81,7 +82,7 @@ function onGenerateStar(row) {
         star.radius = row * sDistance + this.getRandom(minSDistance, maxSDistance)
     }
     star.satellite = null
-    // TODO:资源情况
+    // TODO: 3 资源情况
     switch (star.type) {
         case 0:
             break;
