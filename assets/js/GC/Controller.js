@@ -62,7 +62,6 @@ cc.Class({
     this.game.onGameStart(0)
   },
   //--------------------页面控制----------------
-  //关闭所有页面
   closeAllPage() {
     this.startPage.active = false
     this.preStartPage.active = false

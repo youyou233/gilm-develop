@@ -96,7 +96,6 @@ cc.Class({
       })
     }
   },
-  // 实例化按钮
   onInstantiateButton(data) {
     let button = null
     if (this.buttonsPool) {

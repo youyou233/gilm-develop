@@ -15,18 +15,20 @@ cc.Class({
     galaxySpriteFrame: [cc.SpriteFrame],
 
     playerPerfab: cc.Prefab,
-
   },
   init(UI) {
     this._UI = UI
     this._game = UI._game
+    this.galaxyPoolLength = 30
   },
   createGalaxyPool() {
     this.galaxyPool = new cc.NodePool()
-    for (let i = 0; i < 30; i++) {
-      
+    for (let i = 0; i < this.galaxyPoolLength; i++) {
+      let galaxy = cc.instantiate(this.galaxyPerfab)
+      this.galaxyPool.put(galaxy)
     }
   },
+  // ----------------更新视图---------------
   updateMap() {
     this.mapData = this._game.mapData
     for (let i = 0; i < this.mapData.length; i++) {
@@ -35,7 +37,9 @@ cc.Class({
       }
     }
   },
-  // 刷新玩家位置
+  setGalaxyPos(target, position, data) {
+    
+  },
   updataPlayerPos(pos) {
     if (!pos) {
       if (this._game.gameData) {
@@ -53,6 +57,7 @@ cc.Class({
       // TODO:显示玩家位置
     }
   },
+  // ---------------数据操作--------------
   randomPlayerPosition() {
 
   }

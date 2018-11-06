@@ -36,7 +36,6 @@ cc.Class({
   start() {
 
   },
-  // 生成地图
   //-----------数据绑定 刷新UI视图-----------//
   onUpdataPosition(data) {
     cc.log("位置更新", data);

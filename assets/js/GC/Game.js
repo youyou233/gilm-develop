@@ -63,7 +63,6 @@ cc.Class({
   },
 
   // ------------------------剧情相关-----------------------
-  // 初始化数据
   onDataInit() {
     cc.log('data init')
     this.chapter = 0
