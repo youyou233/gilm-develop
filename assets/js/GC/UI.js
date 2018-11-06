@@ -22,9 +22,11 @@ cc.Class({
     starPage: cc.Node,
 
     // UI节点控制
+    dialogBox: cc.Node,
   },
   init(game) {
     this._game = game
+    this.dialogBox.active = false
     // this.banner.init(this)
     // this.footer.init(this)
     // this.map.init(this)
@@ -67,13 +69,13 @@ cc.Class({
     this.closeAllPage()
     switch (num) {
       case 1:
-      this.shipPage.active=true
+        this.shipPage.active = true
         break;
       case 2:
-      this.starPage.active=true
+        this.starPage.active = true
         break;
       case 3:
-      this.mapPage.active=true
+        this.mapPage.active = true
         break;
     }
   },
@@ -81,6 +83,10 @@ cc.Class({
     this.mapPage.active = false
     this.shipPage.active = false
     this.starPage.active = false
+  },
+  showDialogBox(title, content, callback) {
+    this.dialogBox.active = true
+    this.dialogBox.getComponent('dialog').init(title, content, callback)
   }
   // update (dt) {},
 });

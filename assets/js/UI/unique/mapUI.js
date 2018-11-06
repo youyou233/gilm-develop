@@ -33,12 +33,14 @@ cc.Class({
     this.mapData = this._game.mapData
     for (let i = 0; i < this.mapData.length; i++) {
       for (let j = 0; j < this.mapData[i].length; j++) {
-
+        if (this.galaxyPool.size() > 0) {
+          var galaxy = this.galaxyPool.get()
+        } else {
+          var galaxy = cc.instantiate(this.galaxyPerfab)
+        }
+        galaxy.getComponent('galaxy').init(this, this.mapData[i][j])
       }
     }
-  },
-  setGalaxyPos(target, position, data) {
-    
   },
   updataPlayerPos(pos) {
     if (!pos) {
@@ -60,5 +62,8 @@ cc.Class({
   // ---------------数据操作--------------
   randomPlayerPosition() {
 
-  }
+  },
+  onToNextGalaxy() {
+    
+  },
 })
