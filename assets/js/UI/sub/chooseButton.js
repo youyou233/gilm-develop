@@ -13,8 +13,6 @@ cc.Class({
     this.bindText(data.content)
     // 写个判断 判断按钮按下之后的事件
     this.data = data
-
-
   },
   // onLoad () {},
   bindText(string) {

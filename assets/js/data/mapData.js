@@ -19,6 +19,7 @@ var maxSDistance = 30;
 
 function onGenerateMap() {
   var myMap = [];
+  // 修改数据结构
   for (let i = 0; i < mapLength; i++) {
     let j = 1
     if (i < (mapLength / this.getRandom(2, 3))) {
@@ -50,6 +51,7 @@ var galaxyName = ['Achisa', 'Adio', 'Abun', 'Actun VI', 'Basari I', 'Bustun', 'C
 function onGenerateGalaxy(col, row) {
   let galaxy = {}
   galaxy.name = galaxyName[this.getRandom(0, galaxyName.length - 1)]
+  // todo 修改数据结构
   galaxy.pos = {
     x: col * (col * gIncreaseDis + gDistance) - this.getRandom(minGDistance, maxGDistance),
     y: row * gDistance + this.getRandom(minGDistance, maxGDistance),

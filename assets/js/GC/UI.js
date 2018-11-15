@@ -27,11 +27,11 @@ cc.Class({
   init(game) {
     this._game = game
     this.dialogBox.active = false
-    // this.banner.init(this)
-    // this.footer.init(this)
-    // this.map.init(this)
-    // this.ship.init(this)
-    // this.star.init(this)
+    this.banner.init(this)
+    this.footer.init(this)
+    this.map.init(this)
+    this.ship.init(this)
+    this.star.init(this)
   },
   onLoad() {},
 
@@ -87,6 +87,14 @@ cc.Class({
   showDialogBox(title, content, callback) {
     this.dialogBox.active = true
     this.dialogBox.getComponent('dialog').init(title, content, callback)
-  }
+  },
+  // 函数传递
+  onToNextGalaxy(target,data){
+    //todo 弹出对话框
+    //todo 更换星系界面
+  },
+  onToNextStar(target,data){
+    // todo 弹出对话框
+  },
   // update (dt) {},
 });

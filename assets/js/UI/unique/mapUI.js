@@ -20,16 +20,18 @@ cc.Class({
     this._UI = UI
     this._game = UI._game
     this.galaxyPoolLength = 30
+    this.createGalaxyPool()
   },
   createGalaxyPool() {
     this.galaxyPool = new cc.NodePool()
-    for (let i = 0; i < this.galaxyPoolLength; i++) {
-      let galaxy = cc.instantiate(this.galaxyPerfab)
-      this.galaxyPool.put(galaxy)
-    }
+    // for (let i = 0; i < this.galaxyPoolLength; i++) {
+    //   let galaxy = cc.instantiate(this.galaxyPerfab)
+    //   this.galaxyPool.put(galaxy)
+    // }
   },
   // ----------------更新视图---------------
   updateMap() {
+    // todo 待修改数据
     this.mapData = this._game.mapData
     for (let i = 0; i < this.mapData.length; i++) {
       for (let j = 0; j < this.mapData[i].length; j++) {
@@ -46,7 +48,7 @@ cc.Class({
     if (!pos) {
       if (this._game.gameData) {
         if (this._game.gameData.postion.x == 0) {
-          cc.log('未初始化玩家位置')
+          cc.log('初始化玩家位置')
           this.randomPlayerPosition()
         }
       } else {
@@ -61,9 +63,13 @@ cc.Class({
   },
   // ---------------数据操作--------------
   randomPlayerPosition() {
-
+    //   let playerInitGalaxy=
   },
-  onToNextGalaxy() {
-    
+  onToNextGalaxy(target,data) {
+    this._UI.onToNextGalaxy(target,data)
   },
+  // ---------------通用函数---------------
+  getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
 })

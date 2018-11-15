@@ -23,6 +23,7 @@ function initPlayData() {
       power: 100,
       range: 10, //可视范围
       shield: 0, //护盾
+      oxy:0,
     },
     item: {
       hyd: 10,
